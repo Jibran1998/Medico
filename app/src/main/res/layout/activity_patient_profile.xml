@@ -18,25 +18,50 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:editable="true"
         android:ems="10"
         android:focusable="auto"
         android:focusableInTouchMode="false"
+        android:inputType="textPersonName"
+        android:text="Phsychatarist"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText30" />
+
+    <EditText
+        android:id="@+id/editText30"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:editable="true"
+        android:ems="10"
+        android:focusable="auto"
+        android:focusableInTouchMode="true"
         android:inputType="textPersonName"
         android:text="Jibran Haseeb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.31" />
+        app:layout_constraintVertical_bias="0.478" />
 
     <EditText
         android:id="@+id/editText3"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:editable="false"
         android:ems="10"
         android:focusable="false"
@@ -49,30 +74,44 @@
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:editable="false"
         android:ems="10"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
         android:inputType="phone"
-        android:text="Name"
-        app:layout_constraintTop_toBottomOf="@+id/editText3"
-        tools:layout_editor_absoluteX="88dp" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="465dp" />
+        android:text="+923028783988"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="593dp" />
+        android:layout_marginBottom="32dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:text="house #24A,Shadab Colony, Ferozepur Road, Lahore."
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="@+id/editText4"
+        app:layout_constraintTop_toBottomOf="@+id/editText4"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
